@@ -1,6 +1,7 @@
 #!/bin/sh
 
 set -e
+git config --global --add safe.directory "${GITHUB_WORKSPACE}"
 
 tag=${INPUT_TAG}
 message=${INPUT_MESSAGE}
